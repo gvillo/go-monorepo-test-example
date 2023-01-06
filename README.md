@@ -11,7 +11,7 @@ which can be:
 find . -name go.mod -execdir go test ./... \;
 ```
 
-but this one will try to look for tests at root level and it'll throw the follow error for the empty go.mod:
+but this one will try to look for tests at root level and it'll throw the follow error for the empty go.mod (but it works ok):
 ```
 go: warning: "./..." matched no packages
 no packages to test
